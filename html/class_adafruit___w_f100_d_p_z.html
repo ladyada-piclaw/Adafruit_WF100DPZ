@@ -91,7 +91,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae415349d476550c07a8d47aa9f91b46d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read temperature from the sensor.  <a href="#ae415349d476550c07a8d47aa9f91b46d">More...</a><br /></td></tr>
 <tr class="separator:ae415349d476550c07a8d47aa9f91b46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5ddac387ad70f18ecbda38242237897"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___w_f100_d_p_z.html#aa5ddac387ad70f18ecbda38242237897">readTempPressure</a> (float *pressure, float *temperature)</td></tr>
-<tr class="memdesc:aa5ddac387ad70f18ecbda38242237897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read both temperature and pressure in a single conversion.  <a href="#aa5ddac387ad70f18ecbda38242237897">More...</a><br /></td></tr>
+<tr class="memdesc:aa5ddac387ad70f18ecbda38242237897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read both temperature and pressure from the sensor.  <a href="#aa5ddac387ad70f18ecbda38242237897">More...</a><br /></td></tr>
 <tr class="separator:aa5ddac387ad70f18ecbda38242237897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad43f3708d820667a0c1cdcf61ed3b207"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___w_f100_d_p_z.html#ad43f3708d820667a0c1cdcf61ed3b207">getPartID</a> ()</td></tr>
 <tr class="memdesc:ad43f3708d820667a0c1cdcf61ed3b207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the Part ID from the sensor.  <a href="#ad43f3708d820667a0c1cdcf61ed3b207">More...</a><br /></td></tr>
@@ -114,6 +114,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0ab040b44bad14c519a9b4b5864cb005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_adafruit___w_f100_d_p_z_8h.html#a686b5ee4e143243bdfb5f05ebe2c551d">wf100dpz_sleep_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___w_f100_d_p_z.html#a0ab040b44bad14c519a9b4b5864cb005">getSleepInterval</a> ()</td></tr>
 <tr class="memdesc:a0ab040b44bad14c519a9b4b5864cb005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current sleep interval setting.  <a href="#a0ab040b44bad14c519a9b4b5864cb005">More...</a><br /></td></tr>
 <tr class="separator:a0ab040b44bad14c519a9b4b5864cb005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2194670c68c05626d3fce35b66cf1eed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___w_f100_d_p_z.html#a2194670c68c05626d3fce35b66cf1eed">triggerConversion</a> (<a class="el" href="_adafruit___w_f100_d_p_z_8h.html#ab29259a8fe09cac1804e1116708c2793">wf100dpz_mode_t</a> mode=<a class="el" href="_adafruit___w_f100_d_p_z_8h.html#ab29259a8fe09cac1804e1116708c2793a589d4efc272382f96f3109ab7184d913">WF100DPZ_MODE_COMBINED</a>)</td></tr>
+<tr class="memdesc:a2194670c68c05626d3fce35b66cf1eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a conversion in the specified mode.  <a href="#a2194670c68c05626d3fce35b66cf1eed">More...</a><br /></td></tr>
+<tr class="separator:a2194670c68c05626d3fce35b66cf1eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551cd688bd30906b588aee72d9bb71f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___w_f100_d_p_z.html#a551cd688bd30906b588aee72d9bb71f1">waitDRDY</a> (uint16_t timeout_ms=15)</td></tr>
+<tr class="memdesc:a551cd688bd30906b588aee72d9bb71f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for Data Ready (DRDY) flag.  <a href="#a551cd688bd30906b588aee72d9bb71f1">More...</a><br /></td></tr>
+<tr class="separator:a551cd688bd30906b588aee72d9bb71f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45ffdf394a82b2e01d6cce63a9afdec2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___w_f100_d_p_z.html#a45ffdf394a82b2e01d6cce63a9afdec2">setSleepMode</a> (<a class="el" href="_adafruit___w_f100_d_p_z_8h.html#a686b5ee4e143243bdfb5f05ebe2c551d">wf100dpz_sleep_t</a> interval)</td></tr>
 <tr class="memdesc:a45ffdf394a82b2e01d6cce63a9afdec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable sleep mode with periodic conversions.  <a href="#a45ffdf394a82b2e01d6cce63a9afdec2">More...</a><br /></td></tr>
 <tr class="separator:a45ffdf394a82b2e01d6cce63a9afdec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +190,7 @@ false if I2C communication failed or Part_ID mismatch </dd></dl>
 
 <p>Read pressure from the sensor. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pressure in kPa, or NaN if read failed </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Call <a class="el" href="class_adafruit___w_f100_d_p_z.html#a2194670c68c05626d3fce35b66cf1eed" title="Trigger a conversion in the specified mode. ">triggerConversion()</a> + <a class="el" href="class_adafruit___w_f100_d_p_z.html#a551cd688bd30906b588aee72d9bb71f1" title="Wait for Data Ready (DRDY) flag. ">waitDRDY()</a> first in single-shot mode. In periodic sleep mode, data is always available. </dd></dl>
 
 </div>
 </div>
@@ -204,6 +211,7 @@ false if I2C communication failed or Part_ID mismatch </dd></dl>
 
 <p>Read temperature from the sensor. </p>
 <dl class="section return"><dt>Returns</dt><dd>Temperature in °C, or NaN if read failed </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Call <a class="el" href="class_adafruit___w_f100_d_p_z.html#a2194670c68c05626d3fce35b66cf1eed" title="Trigger a conversion in the specified mode. ">triggerConversion()</a> + <a class="el" href="class_adafruit___w_f100_d_p_z.html#a551cd688bd30906b588aee72d9bb71f1" title="Wait for Data Ready (DRDY) flag. ">waitDRDY()</a> first in single-shot mode. In periodic sleep mode, data is always available. </dd></dl>
 
 </div>
 </div>
@@ -233,7 +241,7 @@ false if I2C communication failed or Part_ID mismatch </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Read both temperature and pressure in a single conversion. </p>
+<p>Read both temperature and pressure from the sensor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pressure</td><td>Pointer to store pressure in kPa </td></tr>
@@ -243,7 +251,8 @@ false if I2C communication failed or Part_ID mismatch </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if both readings successful </dd>
 <dd>
-false if conversion or read failed </dd></dl>
+false if read failed </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Call <a class="el" href="class_adafruit___w_f100_d_p_z.html#a2194670c68c05626d3fce35b66cf1eed" title="Trigger a conversion in the specified mode. ">triggerConversion()</a> + <a class="el" href="class_adafruit___w_f100_d_p_z.html#a551cd688bd30906b588aee72d9bb71f1" title="Wait for Data Ready (DRDY) flag. ">waitDRDY()</a> first in single-shot mode. In periodic sleep mode, data is always available. </dd></dl>
 
 </div>
 </div>
@@ -404,6 +413,64 @@ false if write failed </dd></dl>
 
 <p>Get the current sleep interval setting. </p>
 <dl class="section return"><dt>Returns</dt><dd>Current sleep interval enum value </dd></dl>
+
+</div>
+</div>
+<a id="a2194670c68c05626d3fce35b66cf1eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2194670c68c05626d3fce35b66cf1eed">&#9670;&nbsp;</a></span>triggerConversion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Adafruit_WF100DPZ::triggerConversion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_adafruit___w_f100_d_p_z_8h.html#ab29259a8fe09cac1804e1116708c2793">wf100dpz_mode_t</a>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="_adafruit___w_f100_d_p_z_8h.html#ab29259a8fe09cac1804e1116708c2793a589d4efc272382f96f3109ab7184d913">WF100DPZ_MODE_COMBINED</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trigger a conversion in the specified mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Measurement mode to trigger </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if command was written successfully </dd>
+<dd>
+false if write failed </dd></dl>
+
+</div>
+</div>
+<a id="a551cd688bd30906b588aee72d9bb71f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a551cd688bd30906b588aee72d9bb71f1">&#9670;&nbsp;</a></span>waitDRDY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Adafruit_WF100DPZ::waitDRDY </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>15</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for Data Ready (DRDY) flag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout_ms</td><td>Maximum time to wait in milliseconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if DRDY became set within timeout </dd>
+<dd>
+false if timeout expired </dd></dl>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7eadafruit_5fwf100dpz',['~Adafruit_WF100DPZ',['../class_adafruit___w_f100_d_p_z.html#a98c7a264749a4d01014c2e1a0789fce0',1,'Adafruit_WF100DPZ']]]
+  ['triggerconversion',['triggerConversion',['../class_adafruit___w_f100_d_p_z.html#a2194670c68c05626d3fce35b66cf1eed',1,'Adafruit_WF100DPZ']]]
 ];
