@@ -20,6 +20,10 @@ var searchData=
   ['wf100dpz_5fsoft_5freset',['WF100DPZ_SOFT_RESET',['../_adafruit___w_f100_d_p_z_8h.html#a2462f5e2cbe6f10497542fa2bb0d723c',1,'Adafruit_WF100DPZ.h']]],
   ['wf100dpz_5fstatus_5fdrdy',['WF100DPZ_STATUS_DRDY',['../_adafruit___w_f100_d_p_z_8h.html#acb6f8db1dd836db9ebf49c9b39e5a85f',1,'Adafruit_WF100DPZ.h']]],
   ['wf100dpz_5fstatus_5ferror_5fmask',['WF100DPZ_STATUS_ERROR_MASK',['../_adafruit___w_f100_d_p_z_8h.html#a6df3b6b895993c07022ada17dfe7a938',1,'Adafruit_WF100DPZ.h']]],
+  ['wf100dpz_5fstatus_5fvinn_5fgnd',['WF100DPZ_STATUS_VINN_GND',['../_adafruit___w_f100_d_p_z_8h.html#ab07fd690e9016f07534c25ff3a105052',1,'Adafruit_WF100DPZ.h']]],
+  ['wf100dpz_5fstatus_5fvinn_5fvdd',['WF100DPZ_STATUS_VINN_VDD',['../_adafruit___w_f100_d_p_z_8h.html#a5bf5c6e093ddc429cf8dd5b270e19185',1,'Adafruit_WF100DPZ.h']]],
+  ['wf100dpz_5fstatus_5fvinp_5fgnd',['WF100DPZ_STATUS_VINP_GND',['../_adafruit___w_f100_d_p_z_8h.html#a925ecf3a826aafb263463c44cb8523be',1,'Adafruit_WF100DPZ.h']]],
+  ['wf100dpz_5fstatus_5fvinp_5fvdd',['WF100DPZ_STATUS_VINP_VDD',['../_adafruit___w_f100_d_p_z_8h.html#a330961b1a1676a3b2fd1ce209455ad56',1,'Adafruit_WF100DPZ.h']]],
   ['wf100dpz_5ftemp_5flsb_5fscale',['WF100DPZ_TEMP_LSB_SCALE',['../_adafruit___w_f100_d_p_z_8h.html#a85265d018ca4687a0dbdf6752813af94',1,'Adafruit_WF100DPZ.h']]],
   ['wf100dpz_5ftemp_5foffset',['WF100DPZ_TEMP_OFFSET',['../_adafruit___w_f100_d_p_z_8h.html#a9544219584fcf8876b56f8fb37e6fea4',1,'Adafruit_WF100DPZ.h']]]
 ];

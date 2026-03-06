@@ -129,6 +129,14 @@ Macros</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Status Register Bits</div></td></tr>
 <tr class="memitem:acb6f8db1dd836db9ebf49c9b39e5a85f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_adafruit___w_f100_d_p_z_8h.html#acb6f8db1dd836db9ebf49c9b39e5a85f">WF100DPZ_STATUS_DRDY</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:acb6f8db1dd836db9ebf49c9b39e5a85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07fd690e9016f07534c25ff3a105052"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_adafruit___w_f100_d_p_z_8h.html#ab07fd690e9016f07534c25ff3a105052">WF100DPZ_STATUS_VINN_GND</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="separator:ab07fd690e9016f07534c25ff3a105052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf5c6e093ddc429cf8dd5b270e19185"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_adafruit___w_f100_d_p_z_8h.html#a5bf5c6e093ddc429cf8dd5b270e19185">WF100DPZ_STATUS_VINN_VDD</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="separator:a5bf5c6e093ddc429cf8dd5b270e19185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925ecf3a826aafb263463c44cb8523be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_adafruit___w_f100_d_p_z_8h.html#a925ecf3a826aafb263463c44cb8523be">WF100DPZ_STATUS_VINP_GND</a>&#160;&#160;&#160;0x40</td></tr>
+<tr class="separator:a925ecf3a826aafb263463c44cb8523be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330961b1a1676a3b2fd1ce209455ad56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_adafruit___w_f100_d_p_z_8h.html#a330961b1a1676a3b2fd1ce209455ad56">WF100DPZ_STATUS_VINP_VDD</a>&#160;&#160;&#160;0x80</td></tr>
+<tr class="separator:a330961b1a1676a3b2fd1ce209455ad56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6df3b6b895993c07022ada17dfe7a938"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_adafruit___w_f100_d_p_z_8h.html#a6df3b6b895993c07022ada17dfe7a938">WF100DPZ_STATUS_ERROR_MASK</a>&#160;&#160;&#160;0xF0</td></tr>
 <tr class="separator:a6df3b6b895993c07022ada17dfe7a938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -462,6 +470,66 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>DRDY bit in status register </p>
+
+</div>
+</div>
+<a id="ab07fd690e9016f07534c25ff3a105052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab07fd690e9016f07534c25ff3a105052">&#9670;&nbsp;</a></span>WF100DPZ_STATUS_VINN_GND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WF100DPZ_STATUS_VINN_GND&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>VINN short to GND error </p>
+
+</div>
+</div>
+<a id="a5bf5c6e093ddc429cf8dd5b270e19185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf5c6e093ddc429cf8dd5b270e19185">&#9670;&nbsp;</a></span>WF100DPZ_STATUS_VINN_VDD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WF100DPZ_STATUS_VINN_VDD&#160;&#160;&#160;0x20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>VINN short to VDD error </p>
+
+</div>
+</div>
+<a id="a925ecf3a826aafb263463c44cb8523be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925ecf3a826aafb263463c44cb8523be">&#9670;&nbsp;</a></span>WF100DPZ_STATUS_VINP_GND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WF100DPZ_STATUS_VINP_GND&#160;&#160;&#160;0x40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>VINP short to GND error </p>
+
+</div>
+</div>
+<a id="a330961b1a1676a3b2fd1ce209455ad56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330961b1a1676a3b2fd1ce209455ad56">&#9670;&nbsp;</a></span>WF100DPZ_STATUS_VINP_VDD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WF100DPZ_STATUS_VINP_VDD&#160;&#160;&#160;0x80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>VINP short to VDD error </p>
 
 </div>
 </div>
