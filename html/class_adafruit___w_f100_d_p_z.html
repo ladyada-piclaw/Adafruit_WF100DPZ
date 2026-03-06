@@ -84,9 +84,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ddcb83c46b2317d71fb5276d7d936d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___w_f100_d_p_z.html#a7ddcb83c46b2317d71fb5276d7d936d8">begin</a> (uint8_t addr=<a class="el" href="_adafruit___w_f100_d_p_z_8h.html#a6204a0d15fa0d3d8360c4b46a8f3c1ba">WF100DPZ_DEFAULT_ADDR</a>, TwoWire *wire=&amp;Wire)</td></tr>
 <tr class="memdesc:a7ddcb83c46b2317d71fb5276d7d936d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the sensor over I2C.  <a href="#a7ddcb83c46b2317d71fb5276d7d936d8">More...</a><br /></td></tr>
 <tr class="separator:a7ddcb83c46b2317d71fb5276d7d936d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fe3065664c33e74077ad9cb4bbf073f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___w_f100_d_p_z.html#a7fe3065664c33e74077ad9cb4bbf073f">beginSPI</a> (int8_t cs, int8_t clk, int8_t data, uint32_t freq=1000000)</td></tr>
-<tr class="memdesc:a7fe3065664c33e74077ad9cb4bbf073f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the sensor over 3-wire SPI.  <a href="#a7fe3065664c33e74077ad9cb4bbf073f">More...</a><br /></td></tr>
-<tr class="separator:a7fe3065664c33e74077ad9cb4bbf073f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a8bf103b465d14ae3b0ffe6ccf84401"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___w_f100_d_p_z.html#a1a8bf103b465d14ae3b0ffe6ccf84401">readPressure</a> ()</td></tr>
 <tr class="memdesc:a1a8bf103b465d14ae3b0ffe6ccf84401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read pressure from the sensor.  <a href="#a1a8bf103b465d14ae3b0ffe6ccf84401">More...</a><br /></td></tr>
 <tr class="separator:a1a8bf103b465d14ae3b0ffe6ccf84401"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,60 +152,6 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if initialization successful (Part_ID verified) </dd>
 <dd>
 false if I2C communication failed or Part_ID mismatch </dd></dl>
-
-</div>
-</div>
-<a id="a7fe3065664c33e74077ad9cb4bbf073f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fe3065664c33e74077ad9cb4bbf073f">&#9670;&nbsp;</a></span>beginSPI()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Adafruit_WF100DPZ::beginSPI </td>
-          <td>(</td>
-          <td class="paramtype">int8_t&#160;</td>
-          <td class="paramname"><em>cs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int8_t&#160;</td>
-          <td class="paramname"><em>clk</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int8_t&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>freq</em> = <code>1000000</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize the sensor over 3-wire SPI. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cs</td><td>Chip select pin </td></tr>
-    <tr><td class="paramname">clk</td><td>Clock pin </td></tr>
-    <tr><td class="paramname">data</td><td>Bidirectional data pin </td></tr>
-    <tr><td class="paramname">freq</td><td>Clock frequency in Hz (default 1MHz) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if initialization successful (Part_ID verified) </dd>
-<dd>
-false if communication failed or Part_ID mismatch </dd></dl>
 
 </div>
 </div>
@@ -373,7 +316,7 @@ false if no errors </dd></dl>
 <p>Enable sleep mode with periodic conversions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">interval</td><td>Sleep time code (0-15, interval × ~62.5 ms) </td></tr>
+    <tr><td class="paramname">interval</td><td>Sleep time code (0-15, interval x ~62.5 ms) </td></tr>
   </table>
   </dd>
 </dl>
@@ -424,7 +367,7 @@ false if write failed </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if reset command was written successfully </dd>
 <dd>
 false if write failed </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>In SPI mode, soft reset switches sensor to I2C mode. Avoid calling this method when using SPI. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Sensor NACKs during reset (drops off I2C bus momentarily). This is expected behavior. </dd></dl>
 
 </div>
 </div>
